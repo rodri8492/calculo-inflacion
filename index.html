@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Economia</title>
+</head>
+<body>
+    <header>
+        <h1>Cálculo de inflación en canasta básica</h1>
+    </header>
+    <main>
+        <article class="container-intro">
+            <main>
+                <p>
+                    Este es un trabajo práctico hecho con el objeto de llevar un registro
+                    sobre los distintos productos que se encuentran en dos diferentes lugares
+                    para posteriormente confeccionar un informe donde se detallará si el producto 
+                    sufrió un incremento o decremento luego de 3 quincenas.
+                    <br><br>
+                    <b>Lugares en los que se consultó:</b><br>
+                    <b>Dia: </b><a href="https://maps.app.goo.gl/YyJWndcgbEh1zBCS7">Av. San Martín 1076, Don Bosco.</a>
+                    <br><br>
+                    <b>Carrefour Express: </b><a href="https://maps.app.goo.gl/MXbzUzSnX71eHcn26">Los Tilos 711, Don Bosco.</a>
+                    <br><br>
+                    <b>Debajo podrá seleccionar el producto a comparar y su debido seguimiento.<b>
+                </p>
+            </main>
+        </article>
+        <article class="filtro">
+            <main>
+                <h3>Seleccionar producto:</h3>
+                <select name="filtro" id="producto-seleccionado">
+                    <option value="default">--Producto--</option>
+                    <option value="leche">Leche</option>
+                    <option value="yogurt">Yogurt</option>
+                    <option value="manteca">Manteca</option>
+                    <option value="queso-crema">Queso Crema</option>
+                    <option value="crema">Crema para Cocinar</option>
+                </select>
+                <button id="btn-buscar">Buscar</button>
+                <span id="error-buscar" class="rojo"></span>
+            </main>
+        </article>
+        <article class="resultado-producto" id="resultado-busqueda">
+            <main>
+                <figure>
+                    <img id="imagen-producto" src="">
+                </figure>
+                <h1 id="producto">Producto</h1>
+                <h2 id="marca">Marca</h2>
+                <h3 id="peso">Peso</h3>
+            </main>
+        </article>
+        <article class="tabla" id="tabla-busqueda">
+            <div class="blank"></div>
+            <div class="lugar">
+                <h3>Dia</h3>
+            </div>
+            <div class="lugar">
+                <h3>Carrefour</h3>
+            </div>
+            <div class="quincena izquierda">
+                <h3>2° Quincena de Octubre</h3>
+            </div>
+            <div class="precio-dia dia">
+                <h4 id="precio-dia-1">pd1</h4>
+            </div>
+            <div class="precio-carrefour carrefour">
+                <h4 id="precio-carrefour-1">pc1</h4>
+            </div>
+            <div class="quincena izquierda">
+                <h3>1° Quincena de Noviembre</h3>
+            </div>
+            <div class="precio-dia dia">
+                <h4 id="precio-dia-2">pd2</h4>
+            </div>
+            <div class="precio-carrefour carrefour">
+                <h4 id="precio-carrefour-2">pc2</h4>
+            </div>
+            <div class="quincena izquierda">
+                <h3>2° Quincena de Noviembre</h3>
+            </div>
+            <div class="precio-dia dia">
+                <h4 id="precio-dia-3">pd3</h4>
+            </div>
+            <div class="precio-carrefour carrefour">
+                <h4 id="precio-carrefour-3">pc3</h4>
+            </div>
+            <div class="incremento-tabla izquierda">
+                <h3>Incremento</h3>
+            </div>
+            <div class="resultado-incremento dia">
+                <h4 id="incremento-dia">inc dia</h4>
+            </div>
+            <div class="resultado-incremento carrefour">
+                <h4 id="incremento-carrefour">inc carre</h4>
+            </div>
+        </article>
+        <!-- PONER UN GRAFICO CON EL INCREMENTO DE CADA PRODUCTO -->
+        <article class="grafico" id="grafico-busqueda">
+            <header>
+                <h1>Gráfico</h1>
+            </header>
+            <main>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere sequi nostrum fugiat ea maxime nulla, error modi porro cumque explicabo unde, adipisci animi temporibus tenetur ad? Vel, corporis sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magnam quas. Labore praesentium facilis beatae nulla ad eum numquam non cum porro eos nostrum molestias consectetur dicta, distinctio quidem neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ea nihil, ab libero similique illum minima incidunt laudantium fugit dicta, quia atque id debitis excepturi non rerum porro? Temporibus, ipsam!
+                </p>
+            </main>
+        </article>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
