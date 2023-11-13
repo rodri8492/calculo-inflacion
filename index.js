@@ -302,7 +302,7 @@ botonBuscar.addEventListener("click", ()=>{
         if (productoSeleccionado.value == "leche"){
             productoImg.setAttribute("src", "src/leche.webp");
             productoNombre.innerHTML = "Leche";
-            productoMarca.innerHTML = "La Serenísima 2%";
+            productoMarca.innerHTML = "La Serenísima 3%";
             productoPeso.innerHTML = "1L";
 
             // modificando la tabla
