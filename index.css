@@ -91,6 +91,7 @@ figure img{
 }
 .dia, .carrefour{
     background-color: #714fb6;
+    font-size: 1.3em;
 }
 .blank{
     background-color: #4f5151;
@@ -99,8 +100,11 @@ figure img{
     font-weight: 900;
 }
 .decremento{
-    color: rgb(224, 0, 0);
+    color: rgb(203, 0, 0);
 }
 .incremento{
     color: rgb(4, 235, 4);
+}
+.equilibrio{
+    color: rgb(255, 255, 0);
 }
