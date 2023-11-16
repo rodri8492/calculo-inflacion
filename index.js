@@ -21,6 +21,9 @@ const precioCarrefour2 = document.getElementById("precio-carrefour-2");
 const precioCarrefour3 = document.getElementById("precio-carrefour-3");
 const incrementoCarrefour = document.getElementById("incremento-carrefour");
 
+const grafico = document.getElementById("grafico");
+const descripcionGrafico = document.getElementById("descripcion-grafico");
+
 // --------creando clases para los objetos-------------
 // creando una clase para los productos del dia
 class ProductoDia{
@@ -404,7 +407,11 @@ botonBuscar.addEventListener("click", ()=>{
             incrementoCarrefour.innerHTML = `${lecheCarrefour.incremento}%`;
             corroborarLeche();
 
-            // poner para que publique el gráfico
+            // agregando el grafico
+
+            grafico.setAttribute("src", "graficos/graficoLeche.png");
+            descripcionGrafico.innerHTML = "Este gráfico corresponde a los precios de la Leche, el color Rojo corresponde a los precios del Dia y el color Azul por su parte corresponde a los precios del Carrefour";
+
         } else if (productoSeleccionado.value == "yogurt"){
             productoImg.setAttribute("src", "src/yogurt.webp");
             productoNombre.innerHTML = "Yogurt Bebible Frutilla";
@@ -423,6 +430,11 @@ botonBuscar.addEventListener("click", ()=>{
             incrementoCarrefour.innerHTML = `${yogurtCarrefour.incremento}%`;
             
             corroborarYogurt();
+
+            // agregando el grafico
+
+            grafico.setAttribute("src", "graficos/graficoYogurt.png");
+            descripcionGrafico.innerHTML = "Este gráfico corresponde a los precios del Yogurt, el color Rojo corresponde a los precios del Dia y el color Azul por su parte corresponde a los precios del Carrefour";
 
         } else if (productoSeleccionado.value == "manteca"){
             productoImg.setAttribute("src", "src/manteca.webp");
@@ -443,6 +455,11 @@ botonBuscar.addEventListener("click", ()=>{
 
             corroborarManteca();
 
+            // agregando el grafico
+
+            grafico.setAttribute("src", "graficos/graficoManteca.png");
+            descripcionGrafico.innerHTML = "Este gráfico corresponde a los precios de la Manteca, el color Rojo corresponde a los precios del Dia y el color Azul por su parte corresponde a los precios del Carrefour";
+
         } else if (productoSeleccionado.value == "queso-crema"){
             productoImg.setAttribute("src", "src/quesoCrema.webp");
             productoNombre.innerHTML = "Queso Crema Común";
@@ -462,6 +479,11 @@ botonBuscar.addEventListener("click", ()=>{
 
             corroborarQueso();
 
+            // agregando el grafico
+
+            grafico.setAttribute("src", "graficos/graficoQuesoCrema.png");
+            descripcionGrafico.innerHTML = "Este gráfico corresponde a los precios del Queso Crema, el color Rojo corresponde a los precios del Dia y el color Azul por su parte corresponde a los precios del Carrefour";
+
         } else if (productoSeleccionado.value == "crema"){
             productoImg.setAttribute("src", "src/cremaParaCocinar.webp");
             productoNombre.innerHTML = "Crema para Cocinar";
@@ -480,6 +502,11 @@ botonBuscar.addEventListener("click", ()=>{
             incrementoCarrefour.innerHTML = `${cremaCarrefour.incremento}%`;
 
             corroborarCrema();
+
+            // agregando el grafico
+
+            grafico.setAttribute("src", "graficos/graficoCremaParaCocinar.png");
+            descripcionGrafico.innerHTML = "Este gráfico corresponde a los precios de la Crema para Cocinar, el color Rojo corresponde a los precios del Dia y el color Azul por su parte corresponde a los precios del Carrefour";
 
         }
     }

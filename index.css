@@ -108,3 +108,19 @@ figure img{
 .equilibrio{
     color: rgb(255, 255, 0);
 }
+
+.grafico{
+    width: 100%;
+}
+#grafico{
+    width: 100%;
+}
+.grafico main, .grafico footer{
+    margin: 5px 10px;
+}
+.grafico header{
+    font-size: 1.1em;
+}
+.grafico footer{
+    font-size: .8em;
+}
