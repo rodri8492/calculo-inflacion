@@ -124,3 +124,6 @@ figure img{
 .grafico footer{
     font-size: .8em;
 }
+#producto-seleccionado{
+    background-color: #fff;
+}
